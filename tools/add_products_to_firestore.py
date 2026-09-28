@@ -15,7 +15,7 @@ import urllib.error
 import urllib.request
 from datetime import datetime, timezone
 
-PROJECT = "kuwait-me"
+PROJECT = "qatar-oman"
 BASE = f"https://firestore.googleapis.com/v1/projects/{PROJECT}/databases/(default)/documents"
 CLIENT_JS = "assets/js/firebase-client.js"
 

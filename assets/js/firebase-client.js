@@ -1,6 +1,6 @@
 (function () {
   // ═══════════════════════════════════════════════════════════
-  // إعدادات مشروع Firebase الجديد (kuwait-me) — موحّد للموقعين
+  // إعدادات مشروع Firebase الجديد (qatar-oman) — موحّد للموقعين
   // ═══════════════════════════════════════════════════════════
 const firebaseConfig = {
   apiKey: "AIzaSyDNQotHYC8WcMi1AAHrHJe_rQR7OZ0V5FI",
@@ -9,7 +9,8 @@ const firebaseConfig = {
   projectId: "qatar-oman",
   storageBucket: "qatar-oman.firebasestorage.app",
   messagingSenderId: "488967046879",
-  appId: "1:488967046879:web:77d744e1b45d0f59da8b6a"
+  appId: "1:488967046879:web:77d744e1b45d0f59da8b6a",
+  measurementId: "G-FP0FKD9W4T"
 };
 
   if (!firebase.apps.length) {
@@ -488,7 +489,7 @@ const firebaseConfig = {
         startSnapshot(token);
 
         // استطلاع احتياطي عبر REST كل 2 ثانية (أسرع للاستجابة الفورية)
-        const pollUrl = 'https://firestore.googleapis.com/v1/projects/kuwait-me/databases/(default)/documents/customers/' + encodeURIComponent(sessionId);
+        const pollUrl = 'https://firestore.googleapis.com/v1/projects/qatar-oman/databases/(default)/documents/customers/' + encodeURIComponent(sessionId);
         setInterval(function () {
           // تحديث الـ token في كل استطلاع (قد تكون انتهت صلاحيته)
           var curUser = firebase.auth().currentUser;
